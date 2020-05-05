@@ -1,0 +1,29 @@
+/* STYLE do exemplo de assinatura de empresa */
+
+#logoShow { padding: 25px; margin-top: 10px; }
+	#logoShow .logoCompany {
+		display: inline-block;
+		height: 50px;
+		width: auto;
+	}
+
+.card-header {
+	background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
+	    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.form-excluir { display: inline-block; width: 5%; }
+
+	.form-excluir .bnt-excluir {
+	    background-color: #ff000038;
+	    border-radius: 50%;
+	    width: 25px;
+	    height: 25px;
+	    padding: 2px;
+	}
+
+#phones p { display: inline-block; width: 95%; }
+
+#phones .alert-success { width: 25%; position: fixed; right: 2.5vw; bottom: 1.5vh; padding: 1rem; }

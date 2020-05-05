@@ -1,0 +1,24 @@
+/* STYLE do exemplo de assinatura de empresa */
+
+#example{
+	width: 800px;
+    margin: 0 auto;
+}
+#example table{
+	display: inline-block!important;
+}
+#example table tr td {
+    border-top: none!important;
+	display: inline-block!important;
+}
+#example table tr td img.imgEmployee {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    padding: 10px;
+}
+#example table tr td img.logocompany {
+    max-width: 100%;
+    height: 40px;
+    width: auto;
+}
