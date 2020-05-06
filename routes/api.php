@@ -24,6 +24,8 @@ Route::prefix('phones')->group(function () {
 });
 
 Route::get('employees/validate/{value}', 'EmployeesController@validateEmployee')->name('employees.validate');
+// Route::put('employees/validate/{value}', 'EmployeesController@validateEmployee')->name('employees.validate');
+Route::put('/{id}/update', 'EmployeesController@update')->name('employees.update');
 
 Route::prefix('cities')->group(function () {
     Route::get('/getcitiesstate/{id}', 'CitiesController@getCitiesState')->name('cities.getcitiesstate');

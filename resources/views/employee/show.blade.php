@@ -16,17 +16,19 @@
 			</div>
     		<div class='col-md-12'>
     			<ul class="d-flex mt-3">
-                    <li class="mr-3">
+                    {{-- <li class="mr-3">
                     	{!! Form::open(['route' => ['employees.validate', $employee->id], 'class' => 'form justify-content-center', 'method' => 'PUT']) !!}
                     		<button type="submit" class="text-secondary text-info bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Validar Assinatura" alt="Validar Assinatura"><i class="fa fa-check"></i></button>
                         {!! Form::close() !!}
-                    </li>
+                    </li> --}}
                     <li class="mr-3">
-                    	<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
+						{!! Form::open() !!}
+							<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
+						{!! Form::close() !!}
                     </li>
                     <li class="justify-content-center">
                         {!! Form::open(['route' => ['employees.destroy', $employee->id], 'class' => 'justify-content-center', 'method' => 'DELETE']) !!}
-                            <button type="submit" class="text-danger bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Excluir Cooperador" alt="Excluir Cooperador"><i class="ti-trash"></i></button>
+                            <button type="submit" class="text-danger bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Excluir Colaborador" alt="Excluir Colaborador"><i class="ti-trash"></i></button>
                         {!! Form::close() !!}
                     </li>
                 </ul>
@@ -72,7 +74,7 @@
         </div>
   	</div>
 
-    <h2>Exemplo</h2>
+    <h2>Assinatura</h2>
     <hr>
     <div id="example">
 		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px;" style="display:block;" height="300" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
@@ -152,7 +154,7 @@
 		</tbody></table>
     </div> <!-- end #Exemplo -->
 
-    <h2 class="mt-5">Validar pedido</h2>
+    <h2 class="mt-5">Validar Assinatura</h2>
     <hr>
     <div class="col-12 mt-1">
         <div class="card">
