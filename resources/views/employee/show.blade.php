@@ -16,19 +16,17 @@
 			</div>
     		<div class='col-md-12'>
     			<ul class="d-flex mt-3">
-                    {{-- <li class="mr-3">
+                    <li class="mr-3">
                     	{!! Form::open(['route' => ['employees.validate', $employee->id], 'class' => 'form justify-content-center', 'method' => 'PUT']) !!}
                     		<button type="submit" class="text-secondary text-info bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Validar Assinatura" alt="Validar Assinatura"><i class="fa fa-check"></i></button>
                         {!! Form::close() !!}
-                    </li> --}}
+                    </li>
                     <li class="mr-3">
-						{!! Form::open() !!}
-							<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
-						{!! Form::close() !!}
+                    	<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
                     </li>
                     <li class="justify-content-center">
                         {!! Form::open(['route' => ['employees.destroy', $employee->id], 'class' => 'justify-content-center', 'method' => 'DELETE']) !!}
-                            <button type="submit" class="text-danger bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Excluir Colaborador" alt="Excluir Colaborador"><i class="ti-trash"></i></button>
+                            <button type="submit" class="text-danger bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Excluir Cooperador" alt="Excluir Cooperador"><i class="ti-trash"></i></button>
                         {!! Form::close() !!}
                     </li>
                 </ul>
@@ -74,28 +72,28 @@
         </div>
   	</div>
 
-    <h2>Assinatura</h2>
+    <h2>Exemplo</h2>
     <hr>
     <div id="example">
-		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px;" style="display:block;" height="300" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
+		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:280px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
 		    <tr>
 		        <td style="text-align:left;border-right: 2.5px solid rgba(120, 130, 140, 0.13) !important;">
-		            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="150" style="margin:auto;">
+		            <table id="image_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="150" style="margin:auto;">
 		                <tbody>
 		                    <tr>
 		                        <td>
-									<img src="{{ url('uploads/assets/images/employees/'.$employee->image) }}" class="imgEmployee" style="border-radius:50%;width:135px;height:135px;">
+									<img src="{{ url('uploads/assets/images/employees/'.$employee->image) }}" style="border-radius:200px;border:1px solid white;padding:0px;width:125px;height:125px;" class="imgEmployee">
 		                        </td>                            
 		                    </tr>
 		                </tbody>
 		            </table>
 		        </td>
 		        <td style="text-align:left;">
-		            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="150" style="margin:auto;padding:5px 25px;">
+		            <table id="infos" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="150" style="margin:auto;padding:5px 25px;">
 		                <tbody>
 		                    <tr>
 		                        <td>
-		                        	<table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="65" style="margin:auto;">
+		                        	<table id="block_left" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="65" style="margin:auto;">
 						                <tbody>
 						                    <tr>
 						                        <td>
@@ -109,11 +107,11 @@
 						                    </tr>
 						                </tbody>
 						            </table>
-						            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="85" style="margin:auto;padding:10px 0;">
+						            <table id="block_right" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="85" style="margin:auto;padding:10px 0;">
 						                <tbody>
 						                    <tr>
 						                        <td>
-										            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="75" style="margin: auto;">
+										            <table id="infos_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="75" style="margin: auto;">
 										                <tbody>
 										                    <tr>
 										                        <td>
@@ -130,12 +128,12 @@
 										                    </tr>
 										                </tbody>
 										            </table>
-						                        </td>                            
+						                        </td> 
 										        <td style="text-align:right;">
-										            <table id="image" bgcolor="#FFFFFF" align="right" role="presentation" cellspacing="0" cellpadding="0" border="0" width="350" height="75" style="margin:auto;padding-top:25px;text-align:right;">
+										            <table id="image_company" bgcolor="#FFFFFF" align="right" role="presentation" cellspacing="0" cellpadding="0" border="0" width="350" height="75" style="margin:auto;text-align:right;">
 										                <tbody>
 										                    <tr>
-										                        <td width="350" style="text-align:right;width:350px;">
+										                        <td width="350" style="text-align:right;width:300px;">
 																	<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
 										                        </td>                            
 										                    </tr>
@@ -151,10 +149,23 @@
 		            </table>
 		        </td>
 		    </tr>
+            <!-- <tr>
+                <td>
+		            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="225" height="100" style="margin: auto;">
+		                <tbody>
+		                    <tr>
+								<td width="225" height="100" style="text-align:right;width:225px;">
+									<img src="{{ url('/assets/images/card/icons.png') }}" style="display:inline-block;margin-top:15px;" width="225" height="auto" class="icons">
+								</td>                            
+		                    </tr>
+		                </tbody>
+		            </table>
+                </td>                            
+            </tr> -->
 		</tbody></table>
     </div> <!-- end #Exemplo -->
 
-    <h2 class="mt-5">Validar Assinatura</h2>
+    <h2 class="mt-5">Validar pedido</h2>
     <hr>
     <div class="col-12 mt-1">
         <div class="card">
@@ -175,19 +186,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="{{URL::asset('assets/js/html2canvas.js')}}"></script>
 <script type='text/javascript'>
-var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
-	var width = $( '#logocompany' ).width();
-	$( '#logocompany' ).attr('width', width).css('width', width);
+	var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+	$.ajaxSetup({
+	    headers: {
+	        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	    }
+	});
 
 	var protocol = window.location.protocol;
 	var host = window.location.host;
 
 	function doCapture() {
+		window.scrollTo(0, 0);
 
 		html2canvas(document.getElementById("Table_mail")).then(function (canvas) {
 
@@ -255,7 +265,6 @@ $.ajaxSetup({
 						type: "GET",
 						data: {_token:CSRF_TOKEN,'value':value},
 						success: function(response){
-							console.log(response);
 							var alert = '<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Cooperador <strong>validado</strong>!</div>';
 							$("#img-out").append(alert);
 
