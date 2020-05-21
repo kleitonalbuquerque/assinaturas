@@ -22,6 +22,8 @@
             {!! Form::text('name', $company->name ?? null, ['class' => 'form-control', 'placeholder' => 'Nome']) !!}</div></div>
         <div class="col-md-12"><div class="form-group">
             {!! Form::text('site', $company->site ?? null, ['class' => 'form-control', 'placeholder' => 'Site']) !!}</div></div>
+        <!-- <div class="col-md-6"><div class="form-group">
+            {!! Form::text('phone', $company->phone ?? null, ['class' => 'form-control', 'placeholder' => 'Telefone']) !!}</div></div> -->
         <div class="col-md-1"><div class="form-group">
             {!! Form::color('color', $company->color ?? null, ['class' => 'form-control', 'style' => 'height:50px;']) !!}</div></div>
         <div class="col-md-6"><div class="form-group">

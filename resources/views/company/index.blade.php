@@ -45,6 +45,7 @@
                                 <th>ID</th>
                                 <th>Nome</th>
                                 <th>Site</th>
+                                <th>Telefone</th>
                                 <th>Logo</th>
                                 <th>Action</th>
                             </tr>
@@ -55,6 +56,7 @@
                                 <th scope="row">{{$company->id}}</th>
                                 <td>{{$company->name}}</td>
                                 <td>{{$company->site}}</td>
+                                <td>{{$company->phone}}</td>
                                 <td><img src="{{ url('uploads/assets/images/companies/'.$company->image)}}" class="logocompany"></td>
                                 <td>
                                     <ul class="d-flex justify-content-center">

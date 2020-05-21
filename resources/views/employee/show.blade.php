@@ -77,7 +77,7 @@
     <h2>Exemplo</h2>
     <hr>
     <div id="example">
-		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:280px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
+		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:300px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
 		    <tr>
 		        <td style="text-align:left;border-right: 2.5px solid rgba(120, 130, 140, 0.13) !important;">
 		            <table id="image_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="150" style="margin:auto;">
@@ -135,8 +135,14 @@
 										            <table id="image_company" bgcolor="#FFFFFF" align="right" role="presentation" cellspacing="0" cellpadding="0" border="0" width="350" height="75" style="margin:auto;text-align:right;">
 										                <tbody>
 										                    <tr>
-										                        <td width="350" style="text-align:right;width:350px;">
-																	<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
+										                        <td width="350" style="text-align:right;width:250px;">
+																							<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
+										                        </td>                            
+																				</tr>
+																				<!-- Logos cinza -->
+																				<tr>
+										                        <td width="350" style="text-align:right;width:250px;margin-top:20px;">
+																							<img src="{{ url('http://www.datainfo.inf.br/wp-content/uploads/sites/10/2020/05/ELEMENTOS_abaixo-02.png') }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
 										                        </td>                            
 										                    </tr>
 										                </tbody>
@@ -151,19 +157,19 @@
 		            </table>
 		        </td>
 		    </tr>
-            <!-- <tr>
+            <tr>
                 <td>
 		            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="225" height="100" style="margin: auto;">
 		                <tbody>
 		                    <tr>
-								<td width="225" height="100" style="text-align:right;width:225px;">
-									<img src="{{ url('/assets/images/card/icons.png') }}" style="display:inline-block;margin-top:15px;" width="225" height="auto" class="icons">
-								</td>                            
+													<td width="225" height="100" style="text-align:right;width:225px;">
+														<img src="{{ url('http://www.datainfo.inf.br/wp-content/uploads/sites/10/2020/05/ELEMENTOS_abaixo-01.png') }}" style="display:inline-block;margin-top:5px;" width="225" height="auto" class="icons">
+													</td>                            
 		                    </tr>
 		                </tbody>
 		            </table>
                 </td>                            
-            </tr> -->
+            </tr>
 		</tbody></table>
     </div> <!-- end #Exemplo -->
 

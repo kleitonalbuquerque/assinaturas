@@ -14,6 +14,7 @@ class CompaniesTableSeeder extends Seeder
         App\Models\Company::create([
             'name'      => 'Linsper',
             'site'      => 'linsper.com.br',
+            'phone'      => '0800 765 5540',
             'color'     => '#111111',
             'image'     => 'linsper.png',
         ]);

@@ -26,6 +26,7 @@ class CompaniesFormRequest extends FormRequest
         return [
             'name'          => 'required|min:3|max:100',
             'site'          => 'required|min:3|max:100',
+            // 'phone'          => 'required|min:10|max:20',
             'color'         => 'required|min:7|max:7',
         ];
 

@@ -56,7 +56,7 @@
                 <div class="col-md-6"><div class="form-group">
                     {!! Form::select('company', $companies, 0, ['id' => 'companies', 'class' => 'form-control']) !!}</div></div>
                 <div class="col-md-6"><div class="form-group">
-                    {!! Form::select('phone', ['Selecione uma empresa'], 0, ['id' => 'list_phones', 'class' => 'form-control']) !!}</div></div>
+                    {!! Form::select('phone', ['Selecione o telefone'], 0, ['id' => 'list_phones', 'class' => 'form-control']) !!}</div></div>
                 <div class="col-md-6"><div class="form-group">
                     {!! Form::select('state', $states, 0, ['id' => 'states', 'class' => 'form-control']) !!}</div></div>
                 <div class="col-md-6"><div class="form-group">

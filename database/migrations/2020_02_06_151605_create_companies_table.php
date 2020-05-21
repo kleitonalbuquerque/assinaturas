@@ -17,6 +17,7 @@ class CreateCompaniesTable extends Migration
             $table->bigIncrements('id');
             $table->char('name', 100);
             $table->string('site', 100);
+            $table->char('phone', 20);
             $table->char('color', 7)->default('#000000');
             $table->string('image', 100);
             $table->timestamps();
