@@ -135,7 +135,7 @@
 										            <table id="image_company" bgcolor="#FFFFFF" align="right" role="presentation" cellspacing="0" cellpadding="0" border="0" width="350" height="75" style="margin:auto;text-align:right;">
 										                <tbody>
 										                    <tr>
-										                        <td width="350" style="text-align:right;width:300px;">
+										                        <td width="350" style="text-align:right;width:350px;">
 																	<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
 										                        </td>                            
 										                    </tr>

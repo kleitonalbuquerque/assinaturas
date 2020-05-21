@@ -48,20 +48,28 @@ class CompaniesTableSeeder extends Seeder
             'image'     => 'total.png',
         ]);
         DB::table('phones')->insert([
-            'phone'     => '4732859738',
+            'phone'     => '0800 765 5540',
             'company'   => 1,
         ]);
         DB::table('phones')->insert([
-            'phone'     => '4733859068',
-            'company'   => 1,
+            'phone'     => '0800 765 5540',
+            'company'   => 2,
         ]);
         DB::table('phones')->insert([
-            'phone'     => '4733710528',
-            'company'   => 1,
+            'phone'     => '0800 765 5540',
+            'company'   => 3,
         ]);
         DB::table('phones')->insert([
-            'phone'     => '47991420183',
-            'company'   => 1,
+            'phone'     => '0800 765 5540',
+            'company'   => 4,
+        ]);
+        DB::table('phones')->insert([
+            'phone'     => '0800 765 5540',
+            'company'   => 5,
+        ]);
+        DB::table('phones')->insert([
+            'phone'     => '0800 765 5540',
+            'company'   => 6,
         ]);
     }
 }
