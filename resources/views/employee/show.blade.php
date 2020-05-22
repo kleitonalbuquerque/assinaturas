@@ -77,7 +77,7 @@
     <h2>Exemplo</h2>
     <hr>
     <div id="example">
-		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:300px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
+		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:320px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
 		    <tr>
 		        <td style="text-align:left;border-right: 2.5px solid rgba(120, 130, 140, 0.13) !important;">
 		            <table id="image_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="150" style="margin:auto;">
@@ -135,17 +135,17 @@
 										            <table id="image_company" bgcolor="#FFFFFF" align="right" role="presentation" cellspacing="0" cellpadding="0" border="0" width="350" height="75" style="margin:auto;text-align:right;">
 										                <tbody>
 										                    <tr>
-										                        <td width="350" style="text-align:left;width:350px;">
-																							<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
+										                        <td width="350" style="text-align:right;width:230px;">
+																							<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;margin-top:15px;" width="auto" height="40" class="logocompany">
 																							<!-- <img src="{{ url('uploads/assets/images/companies/153820202005215ec6ca9c81d77.png') }}" style="display:inline-block;margin-top:10px;" width="auto" height="40" class="logocompany"> -->
 																						</td>                              
 																				</tr>
-																				<!-- Logos cinza -->
-																				<tr>
-										                        <td width="350" style="text-align:left;width:350px;margin-top:10px;">
+																				<!-- Logos cinza para assinatura linsper -->
+																				<!-- <tr>
+										                        <td width="350" style="text-align:right;width:350px;margin-top:10px;">
 																							<img src="{{ url('uploads/assets/images/companies/153820202005215ec6ca9c81d77.png') }}" style="display:inline-block;" width="auto" height="40" class="logocompany">
 										                        </td>                            
-										                    </tr>
+										                    </tr> -->
 										                </tbody>
 										            </table>
 										        </td>
