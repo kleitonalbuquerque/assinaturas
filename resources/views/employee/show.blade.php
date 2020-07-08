@@ -7,31 +7,31 @@
 @section('content')
     <div id="logoShow" class='row'>
     	<div class='col-md-2'>
-			<img src="{{ url('uploads/assets/images/employees/'.$employee->image) }}" class="w-75">
-		</div>
+				<img src="{{ url('uploads/assets/images/employees/'.$employee->image) }}" class="w-75">
+			</div>
     	<div class='col-md-10'>
     		<div class='col-md-12'>
     			<h2>{{$employee->name}}</h2>
-				<p>{{$employee->office}}</p>
-			</div>
+					<p>{{$employee->office}}</p>
+				</div>
     		<div class='col-md-12'>
     			<ul class="d-flex mt-3">
-                    <!-- <li class="mr-3">
-                    	{!! Form::open(['route' => ['employees.validate', $employee->id], 'class' => 'form justify-content-center', 'method' => 'PUT']) !!}
-                    		<button type="submit" class="text-secondary text-info bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Validar Assinatura" alt="Validar Assinatura"><i class="fa fa-check"></i></button>
-                        {!! Form::close() !!}
-                    </li> -->
-                    <li class="mr-3">
-											{!! Form::open() !!}	
-												<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
-											{!! Form::close() !!}	
-                    </li>
-                    <li class="justify-content-center">
-                      {!! Form::open(['route' => ['employees.destroy', $employee->id], 'class' => 'justify-content-center', 'method' => 'DELETE']) !!}
-                        <button type="submit" class="text-danger bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Excluir" alt="Excluir"><i class="ti-trash"></i></button>
-                      {!! Form::close() !!}
-                    </li>
-                </ul>
+							<!-- <li class="mr-3">
+								{!! Form::open(['route' => ['employees.validate', $employee->id], 'class' => 'form justify-content-center', 'method' => 'PUT']) !!}
+									<button type="submit" class="text-secondary text-info bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Validar Assinatura" alt="Validar Assinatura"><i class="fa fa-check"></i></button>
+									{!! Form::close() !!}
+							</li> -->
+							<li class="mr-3">
+								{!! Form::open() !!}	
+									<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
+								{!! Form::close() !!}	
+							</li>
+							<li class="justify-content-center">
+								{!! Form::open(['route' => ['employees.destroy', $employee->id], 'class' => 'justify-content-center', 'method' => 'DELETE']) !!}
+									<button type="submit" class="text-danger bnt-excluir" data-toggle="tooltip" data-placement="bottom" title="Excluir" alt="Excluir"><i class="ti-trash"></i></button>
+								{!! Form::close() !!}
+							</li>
+					</ul>
 			</div>
 		</div>
 		<div class='col-md-12'>
@@ -40,103 +40,103 @@
     </div>
 
    	<div class='container py-4'>
-        <div class='row justify-content-center'>
-          <div class='col-md-8'>
-            <div class='card'>
-              <div class='card-header'>
+      <div class='row justify-content-center'>
+        <div class='col-md-8'>
+          <div class='card'>
+            <div class='card-header'>
                 <h4 class='list-inline-item'>Dados de(o) {{$employee->name}}</h4>
-              </div>
-		      <div class='card-body'>
+            </div>
+		      	<div class='card-body'>
 
 		        <ul class='list-group list-group-flush' id="phones">
-		            <div class='list-group-item list-group-item-action d-flex'>
-		            	<p>{{$employee->name}}</p>
-		            </div>
-		            <div class='list-group-item list-group-item-action d-flex'>
-						<p>{{$employee->mail}}</p>
-		            </div>
-		            <div class='list-group-item list-group-item-action d-flex'>
-						<p>{{$employee->office}}</p>
-		            </div>
-		            <div class='list-group-item list-group-item-action d-flex'>
-						<p>{{$employee->company()->first()->name}}</p>
-		            </div>
-		            <div class='list-group-item list-group-item-action d-flex'>
-						<p>{{$employee->city()->first()->name}}, {{$states->uf}}</p>
-		            </div>
-		            <div class='list-group-item list-group-item-action d-flex'>
-						<p>{{$employee->phone()->first()->phone}}</p>
-		            </div>
+							<div class='list-group-item list-group-item-action d-flex'>
+								<p>{{$employee->name}}</p>
+							</div>
+							<div class='list-group-item list-group-item-action d-flex'>
+								<p>{{$employee->mail}}</p>
+							</div>
+							<div class='list-group-item list-group-item-action d-flex'>
+								<p>{{$employee->office}}</p>
+							</div>
+							<div class='list-group-item list-group-item-action d-flex'>
+									<p>{{$employee->company()->first()->name}}</p>
+							</div>
+							<div class='list-group-item list-group-item-action d-flex'>
+									<p>{{$employee->city()->first()->name}}, {{$states->uf}}</p>
+							</div>
+							<div class='list-group-item list-group-item-action d-flex'>
+									<p>{{$employee->phone()->first()->phone}}</p>
+							</div>
 		        </ul>
 		      </div>
-            </div>
-          </div>
-        </div>
-  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <h2>Exemplo</h2>
     <hr>
     <div id="example">
 		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:320px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
-		    <tr>
-		        <td style="text-align:left;border-right: 2.5px solid rgba(120, 130, 140, 0.13) !important;">
-		            <table id="image_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="150" style="margin:auto;">
-		                <tbody>
-		                    <tr>
-		                        <td>
+		  <tr>
+				<td style="text-align:left;border-right: 2.5px solid rgba(120, 130, 140, 0.13) !important;">
+					<table id="image_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="150" style="margin:auto;">
+						<tbody>
+							<tr>
+								<td>
 									<img src="{{ url('uploads/assets/images/employees/'.$employee->image) }}" style="border-radius:200px;border:1px solid white;padding:0px;width:125px;height:125px;" class="imgEmployee">
-		                        </td>                            
-		                    </tr>
-		                </tbody>
-		            </table>
-		        </td>
+								</td>                            
+							</tr>
+						</tbody>
+					</table>
+				</td>
 		        <td style="text-align:left;">
-		            <table id="infos" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="150" style="margin:auto;padding:5px 25px;">
+		          <table id="infos" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="150" style="margin:auto;padding:5px 25px;">
 		                <tbody>
-		                    <tr>
-		                        <td>
-		                        	<table id="block_left" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="65" style="margin:auto;">
-						                <tbody>
-						                    <tr>
-						                        <td>
-													<p style="font-size:26px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:{{$employee->company()->first()->color}};line-height:35px;letter-spacing:-0.1px;margin:0;font-weight:bold;" align="left">
-														{{$employee->name}}
-													</p>
-													<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:20px;letter-spacing:-0.1px;margin:0;font-weight:200;" align="left">
-														{{$employee->office}}
-													</p>
-												 </td>                            
-						                    </tr>
-						                </tbody>
-						            </table>
-						            <table id="block_right" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="85" style="margin:auto;padding:10px 0;">
-						                <tbody>
-						                    <tr>
-						                        <td>
-										            <table id="infos_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="75" style="margin: auto;">
-										                <tbody>
-										                    <tr>
-										                        <td>
-																	<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:22.5px;margin:0;font-weight:200;" align="left">
-																		{{$employee->phone()->first()->phone}}
+		                  <tr>
+		                    <td>
+		                      <table id="block_left" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="65" style="margin:auto;">
+						              	<tbody>
+						                  <tr>
+						                    <td>
+																	<p style="font-size:26px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:{{$employee->company()->first()->color}};line-height:35px;letter-spacing:-0.1px;margin:0;font-weight:bold;" align="left">
+																		{{$employee->name}}
 																	</p>
-																	<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:22.5px;margin:0;font-weight:200;" align="left">
-																		{{$employee->company()->first()->site}}
-																	</p>
-																	<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:22.5px;margin:0;font-weight:200;" align="left">
-																		{{$employee->city()->first()->name}}, {{$states->uf}}
+																	<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:20px;letter-spacing:-0.1px;margin:0;font-weight:200;" align="left">
+																		{{$employee->office}}
 																	</p>
 																</td>                            
-										                    </tr>
+						                  </tr>
+						                </tbody>
+						            	</table>
+						            	<table id="block_right" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="500" height="85" style="margin:auto;padding:10px 0;">
+						                <tbody>
+						                  <tr>
+						                    <td>
+										            	<table id="infos_employee" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="150" height="75" style="margin: auto;">
+										                <tbody>
+										                  <tr>
+										                    <td>
+																					<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:22.5px;margin:0;font-weight:200;" align="left">
+																						{{$employee->phone()->first()->phone}}
+																					</p>
+																					<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:22.5px;margin:0;font-weight:200;" align="left">
+																						{{$employee->company()->first()->site}}
+																					</p>
+																					<p style="font-size:16px;font-family:'Open Sans', sans-serif;text-align:left;display:block;color:#A0A09E;line-height:22.5px;margin:0;font-weight:200;" align="left">
+																						{{$employee->city()->first()->name}}, {{$states->uf}}
+																					</p>
+																				</td>                            
+										                  </tr>
 										                </tbody>
-										            </table>
-						                        </td> 
-										        <td style="text-align:right;">
+										            	</table>
+						                    </td> 
+										        	<td style="text-align:right;">
 										            <table id="image_company" bgcolor="#FFFFFF" align="right" role="presentation" cellspacing="0" cellpadding="0" border="0" width="350" height="75" style="margin:auto;text-align:right;">
 										                <tbody>
 										                    <tr>
 										                        <td width="350" style="text-align:right;width:230px;">
-																							<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;margin-top:15px;" width="auto" height="40" class="logocompany">
+																							<img src="{{ url('uploads/assets/images/companies/'.$employee->company()->first()->image) }}" style="display:inline-block;margin-top:15px;" width="auto" class="logocompany">
 																							<!-- <img src="{{ url('uploads/assets/images/companies/153820202005215ec6ca9c81d77.png') }}" style="display:inline-block;margin-top:10px;" width="auto" height="40" class="logocompany"> -->
 																						</td>                              
 																				</tr>
@@ -171,8 +171,9 @@
 		            </table>
                 </td>                            
             </tr>
-		</tbody></table>
-    </div> <!-- end #Exemplo -->
+			</tbody>
+		</table>
+	</div> <!-- end #Exemplo -->
 
     <h2 class="mt-5">Validar Assinatura</h2>
     <hr>
@@ -181,12 +182,12 @@
             <div class="card-body">
 				<button type="button" class="btn btn-outline-info" onclick="doCapture()">Gerar imagem</button>
 				<button type="button" class="btn btn-outline-success send" onclick="send()" id="{{$employee->id}}">Enviar imagem por email</button>
-            </div>
-            <div id="img-out" class="col-12 mt-1">
-            	<div id="img" style="display:none;"> 
-		            <img src="" id="newimg" class="" /> 
-		        </div> 
-            </div>
+					</div>
+					<div id="img-out" class="col-12 mt-1">
+						<div id="img" style="display:none;"> 
+							<img src="" id="newimg" class="" /> 
+						</div> 
+					</div>
         </div>
     </div>
 
@@ -239,6 +240,7 @@
 
 	// validate record
 	function send() {
+		window.scrollTo(0, 0);
 
 		html2canvas(document.getElementById("Table_mail")).then(function (canvas) {
 
