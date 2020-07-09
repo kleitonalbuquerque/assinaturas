@@ -29,7 +29,7 @@
                         </span>
                     @endif
                 </div>
-                <div class="row mb-4 rmber-area">
+                <!-- <div class="row mb-4 rmber-area">
                     <div class="col-6">
                         <div class="custom-control custom-checkbox mr-sm-2">
                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -41,7 +41,7 @@
                         <a href="{{ route('password.request') }}">{{ __('Esqueceu a senha?') }}</a>
                     </div>
                     @endif
-                </div>
+                </div> -->
                 <div class="submit-btn-area">
                     <button id="form_submit" type="submit">{{ __('Entrar') }} <i class="ti-arrow-right"></i></button>
                 </div>

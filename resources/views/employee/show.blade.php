@@ -22,9 +22,9 @@
                         {!! Form::close() !!}
                     </li> -->
                     <li class="mr-3">
-											{!! Form::open() !!}	
-												<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
-											{!! Form::close() !!}	
+						{!! Form::open() !!}	
+							<a href="{{route('employees.edit', $employee->id)}}" class="text-secondary" data-toggle="tooltip" data-placement="bottom" title="Editar dados" alt="Editar dados"><i class="fa fa-edit"></i></a>
+						{!! Form::close() !!}	
                     </li>
                     <li class="justify-content-center">
                       {!! Form::open(['route' => ['employees.destroy', $employee->id], 'class' => 'justify-content-center', 'method' => 'DELETE']) !!}
@@ -74,7 +74,7 @@
         </div>
   	</div>
 
-    <h2>Exemplo</h2>
+    <h2>Assinatura</h2>
     <hr>
     <div id="example">
 		<table bgcolor="#FFFFFF" id="Table_mail" style="margin:0 auto 0 auto;width:800px;padding:50px 50px 50px 50px;width:800px;height:320px;" style="display:block;" height="340" border="0" cellpadding="0" cellspacing="0" align="center"><tbody>
@@ -163,9 +163,9 @@
 		            <table id="image" bgcolor="#FFFFFF" align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" width="225" height="100" style="margin: auto;">
 		                <tbody>
 		                    <tr>
-													<td width="225" height="100" style="text-align:left;width:225px;">
-														<img src="{{ url('uploads/assets/images/companies/153447202005215ec6c9c70715e.png') }}" style="display:inline-block;margin-top:10px;" width="auto" height="40" class="logocompany">
-													</td>                            
+								<td width="225" height="100" style="text-align:left;width:225px;">
+									<img src="{{ url('uploads/assets/images/companies/183431202007085f063be70af90.png') }}" style="display:inline-block;margin-top:10px;" width="auto" height="40" class="logocompany">
+								</td>                            
 		                    </tr>
 		                </tbody>
 		            </table>
@@ -214,7 +214,7 @@
 			var ajax = new XMLHttpRequest();
 
 			// Setting method, server file name, and asynchronous
-			ajax.open("POST", protocol+"//"+host+"/save.php", true);
+			ajax.open("POST", protocol+"//"+host+"/assinaturas/public/save.php", true);
 
 			// Setting headers for POST method
 			ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -231,7 +231,7 @@
 
 					// Displaying response from server
 					console.log(this.responseText);
-					window.open(protocol+"//"+host+"/baixar.php?arquivo="+this.responseText)
+					window.open(protocol+"//"+host+"/assinaturas/public/baixar.php?arquivo="+this.responseText)
 				}
 			};
 		});
@@ -239,6 +239,7 @@
 
 	// validate record
 	function send() {
+		window.scrollTo(0, 0);
 
 		html2canvas(document.getElementById("Table_mail")).then(function (canvas) {
 
@@ -246,7 +247,7 @@
 			var ajax = new XMLHttpRequest();
 
 			// Setting method, server file name, and asynchronous
-			ajax.open("POST", protocol+"//"+host+"/save.php", true);
+			ajax.open("POST", protocol+"//"+host+"/assinaturas/public/save.php", true);
 
 			// Setting headers for POST method
 			ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

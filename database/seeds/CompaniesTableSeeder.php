@@ -21,30 +21,35 @@ class CompaniesTableSeeder extends Seeder
         App\Models\Company::create([
             'name'      => 'Datainfo',
             'site'      => 'datainfo.com.br',
+            'phone'      => '0800 765 5540',
             'color'     => '#111111',
             'image'     => 'datainfo.png',
         ]);
         App\Models\Company::create([
             'name'      => 'Eme4',
             'site'      => 'eme4.com.br',
+            'phone'      => '0800 765 5540',
             'color'     => '#111111',
             'image'     => 'eme4.png',
         ]);
         App\Models\Company::create([
             'name'      => 'Requisita',
             'site'      => 'requisita.com.br',
+            'phone'      => '0800 765 5540',
             'color'     => '#111111',
             'image'     => 'requisita.png',
         ]);
         App\Models\Company::create([
             'name'      => 'Semper',
             'site'      => 'semper.com.br',
+            'phone'      => '0800 765 5540',
             'color'     => '#111111',
             'image'     => 'semper.png',
         ]);
         App\Models\Company::create([
             'name'      => 'Total',
             'site'      => 'total.com.br',
+            'phone'      => '0800 765 5540',
             'color'     => '#111111',
             'image'     => 'total.png',
         ]);

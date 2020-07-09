@@ -304,7 +304,7 @@ class EmployeesController extends Controller
                 </tr>
                 <tr>
                     <td>
-                        <img style="display:block;" src="http://assinaturas.linsper.com.br/uploads/assets/images/emails/'.$image.'" width="800" alt=""></td>
+                        <img style="display:block;" src="http://assinaturas.linsper.com.br/public/uploads/assets/images/emails/'.$image.'" width="800" alt=""></td>
                 </tr>
             </table>
             </body>
